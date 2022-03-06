@@ -1,0 +1,47 @@
+.flats-container{
+  background-color: white;
+  padding: 30px;
+}
+
+.flats{
+  display: flex;
+}
+
+.flat{
+  background-color: #F8F9FA;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+  box-shadow: 0px 1px 2px #9f9f9f
+}
+
+.info{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.address{
+  font-size: 14px;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.links{
+  background-color: white;
+  padding: 10px;
+  border-top: solid;
+  border-width: 1px;
+  border-color: #F2F2F3;
+}
+
+a {
+  text-decoration: none !important;
+}

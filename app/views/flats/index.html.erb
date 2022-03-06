@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <%= stylesheet_link_tag 'flats', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    Simple Airbnb
+    <div class= "flats-container">
+      <h1>All our flats (<%= @flats.size%>)</h1>
+      <div class= "flats">
+        <% @flats.each do |flat| %>
+          <div class= "flat">
+            <div class= "info">
+              <div class= "name">  <%= flat.name %> </div>
+              <div class= "address"> <%= flat.address %> </div>
+              <div class= "other details">
+                <i class="material-icons">people</i><%= flat.number_of_guests %>
+                <i class="material-icons">euro_symbol</i><%= flat.price_per_night %>
+              </div>
+            </div>
+            <div class="links">
+              <%= link_to "More info", flat%>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>
